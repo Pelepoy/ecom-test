@@ -1,19 +1,21 @@
 /* eslint-disable */
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, } from "react-bootstrap";
+
 
 const Footer = () => {
- const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer>
-      <Container>
-        <Row>
-          <Col className='text-center py-3'>
-            <p>E-Com Test &copy; {currentYear}</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+      <footer className='container-fluid bg-primary'>
+        <Container>
+          <Row >
+            <Col className='text-center py-3'>
+              <p>E-Com Test &copy; {currentYear}</p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+
   )
 }
 
